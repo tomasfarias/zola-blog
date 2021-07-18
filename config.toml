@@ -1,9 +1,9 @@
 # The URL the site will be built for
-base_url = "https://tomasfarias.dev"
+base_url = "tomasfarias.dev"
 
 # Used in RSS by default
 title = "tomasfarias.dev"
-description = "My personal blog"
+description = "Blogging about programming languages, open-source software, and other software engeering topics"
 
 # The default language; used in feeds.
 default_language = "en"
@@ -73,7 +73,7 @@ favicon = "favicon.ico"
 
 # Set a custom preview image for your website when posted as a link.
 # Must be placed in root of static/ directory...
-# og_preview_img = ""
+og_preview_img = ""
 
 # Copyright notice if desired. Defaults to 
 copyright = "Copyright © 2021 Tomás Farías Santana"
@@ -87,7 +87,7 @@ logo_home_link = "/"
 # Menu items to display. You define a url and the name of the menu item.
 # NOTE: `$BASE_URL/` must be included in the url name.
 main_menu = [
-  {url="/about/", name="about"},
+  {url="/about", name="about"},
   {url="https://github.com/tomasfarias", external=true, name="github"}
 ]
 
