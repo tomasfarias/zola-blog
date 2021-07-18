@@ -1,4 +1,10 @@
-// Set darkmode
+// In case you cannot tell, I don't do JS
+if (localStorage.getItem('theme') === 'dark' || localStorage.getItem('theme') === null) {
+    document.body.className = 'dark';
+} else {
+    document.body.className = 'light';
+}
+
 document.getElementById('mode').addEventListener('click', () => {
     if (localStorage.getItem('theme') === 'light' || localStorage.getItem('theme') === null) {
         document.body.classList.remove('light');
