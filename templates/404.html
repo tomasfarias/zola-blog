@@ -1,0 +1,15 @@
+{% extends "index.html" -%}
+
+{%- block title %}
+    <title>404 - Not Found</title>
+{%- endblock title -%}
+
+{%- block main -%}
+    <article class="post">
+        <header>
+            <h1 class="post-title">404 - Not Found</h1>
+        </header>
+        <p>The content you are looking for does not exist anymore or it has been moved somewhere else.</p>
+        <input class="btn" type="button" style="margin-left: 0px;" value="Go back" onclick="history.back(-1)" />
+    </article>
+{%- endblock main -%}

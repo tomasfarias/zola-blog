@@ -361,11 +361,13 @@ hr {
 body.dark .btn {
     border: 1px solid var(--accent);
     background-color: var(--accent);
+    color: var(--color-light);
 }
 
 body.light .btn {
     border: 1px solid var(--accent-light);
     background-color: var(--accent-light);
+    color: var(--color);
 }
 
 .toggle-icon {
