@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+body.dark .logo {
+  background: var(--accent);
+  color: var(--background);
+}
+
+body.light .logo {
+  background: var(--accent-light);
+  color: var(--background-light);
+}
