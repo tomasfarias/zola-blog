@@ -51,7 +51,7 @@ poetry init
 We can add dependencies to `pyproject.toml` under the `[tool.poetry.dependencies]` section, or just using the following command:
 
 ```sh
-poetry add "requests=2.26.0" beautifulsou4@latest "pandas>=1.3"
+poetry add "requests=2.26.0" beautifulsoup4@latest "pandas>=1.3"
 ```
 
 As illustrated, dependency version constraints can also be specified when adding. In similar fashion, development dependencies can be added with the `--dev` flag:
