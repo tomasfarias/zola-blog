@@ -192,12 +192,12 @@ code {
   font-size: .95rem;
 }
 
-code.dark {
+body.dark code {
   background: var(--accent-alpha-20);
   color: var(--accent);
 }
 
-code.dark {
+body.light code {
   background: var(--accent-alpha-20-light);
   color: var(--accent-light);
 }
@@ -221,13 +221,41 @@ pre {
     word-wrap: break-word;
   }
 
-    code {
+  code {
       background: none !important;
       margin: 0;
       padding: 0;
       font-size: inherit;
       border: none;
   }
+
+  table td {
+      padding: 0;
+      border: none;
+  }
+
+  table td:nth-of-type(1) {
+      text-align: center;
+      user-select: none;
+      width: auto;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      border: none;
+      table-layout: auto;
+      margin: 0;
+  }
+
+  mark {
+      display: block;
+      background-color: rgba(254, 252, 232, 0.9);
+  }
+}
+
+pre[data-linenos] {
+  padding: 1rem 0;
 }
 
 blockquote {
