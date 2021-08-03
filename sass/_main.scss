@@ -21,6 +21,8 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   font-feature-settings: "liga";
+  text-align: justify;
+  text-justify: inter-word;
 
   @media (max-width: $phone-max-width) {
     font-size: 1rem;
