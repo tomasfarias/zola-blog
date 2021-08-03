@@ -1,6 +1,6 @@
 # zola-blog
 
-This is my personal blog, powered by [zola](https://www.getzola.org/) and served by [caddy](https://caddyserver.com/). I use a customized theme based on [zerm](https://github.com/ejmg/zerm). Visit it at [tomasfarias.dev](tomasfarias.dev)!.
+This is my personal blog, powered by [zola](https://www.getzola.org/) and served by [caddy](https://caddyserver.com/). I use a customized theme based on [zerm](https://github.com/ejmg/zerm). Visit it at [tomasfarias.dev](https://tomasfarias.dev)!
 
 # Why zola?
 
