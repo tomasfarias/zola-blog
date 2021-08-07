@@ -61,7 +61,7 @@ Which would leave us with an output like:
 
 To take a look at the actual error messages to do some debugging, we may run:
 
-```json
+```sh
 cat target/run_results.json | jq -r '.results | map(select(.status == "error")) | map({"model": .unique_id, "error_message": .message})'
 ```
 
