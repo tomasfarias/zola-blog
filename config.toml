@@ -42,7 +42,10 @@ external_links_no_referrer = true
 
 [markdown]
 highlight_code = true
-highlight_theme = "one-dark"
+highlight_themes_css = [
+  { theme = "gruvbox-dark", filename = "syntax-theme-dark.css" },
+  { theme = "gruvbox-light", filename = "syntax-theme-light.css" },
+]
 render_emoji = true
 
 [extra]

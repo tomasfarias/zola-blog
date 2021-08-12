@@ -40,10 +40,12 @@ body.light {
 }
 
 body.light .toggle-light {
+    opacity: 0%;
     display: none;
 }
 
 body.dark .toggle-dark {
+    opacity: 0%;
     display: none;
 }
 
@@ -194,14 +196,26 @@ code {
   font-size: .95rem;
 }
 
-body.dark code {
-  background: var(--accent-alpha-20);
-  color: var(--accent);
+body.dark {
+    code {
+        background: var(--accent-alpha-20);
+        color: var(--accent);
+    }
+
+    .post-meta a, .post-meta {
+        color: var(--accent-meta);        
+    }
 }
 
-body.light code {
-  background: var(--accent-alpha-20-light);
-  color: var(--accent-light);
+body.light {
+    code {
+        background: var(--accent-alpha-20-light);
+        color: var(--accent-light);
+    }
+
+    .post-meta a, .post-meta {
+        color: var(--accent-meta-light);
+    }
 }
 
 pre {
@@ -392,12 +406,42 @@ body.dark .btn {
     border: 1px solid var(--accent);
     background-color: var(--accent);
     color: var(--color-light);
+    opacity: 100%;
 }
 
 body.light .btn {
     border: 1px solid var(--accent-light);
     background-color: var(--accent-light);
     color: var(--color);
+    opacity: 100%;
+}
+
+body.dark {
+    .btn:hover {
+        border: 1px solid var(--accent-light);
+        background-color: var(--accent-light);
+        color: var(--color);
+        transition: all 0.5s;
+
+        .toggle-light .toggle-icon {
+            stroke: white;
+            transition: stroke 0.5s;
+        }
+    }
+}
+
+body.light {
+    .btn:hover {
+        border: 1px solid var(--accent);
+        background-color: var(--accent);
+        color: var(--color-light);
+        transition: all 0.5s;
+
+        .toggle-dark .toggle-icon {
+            stroke: #2e3440;
+            transition: stroke 0.5s;
+        }
+    }
 }
 
 .toggle-icon {
