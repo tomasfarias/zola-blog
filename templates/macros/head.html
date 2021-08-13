@@ -8,6 +8,7 @@
 
 {% macro styling() %}
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/syntax-theme-dark.css" id="syntax-theme">
     {% if config.extra.theme_color != "orange" -%}
         {% set color = "/color/" ~ config.extra.theme_color ~ ".css" -%}
         <link rel="stylesheet" href="{{ color }}">
