@@ -6,9 +6,11 @@ const theme = document.querySelector("#syntax-theme");
 if (localStorage.getItem('theme') === 'dark' || prefersDarkScheme.matches) {
     document.body.className = 'dark';
     theme.href = "syntax-theme-dark.css";
+    localStorage.setItem('theme', 'dark');
 } else {
     document.body.className = 'light';
     theme.href = "syntax-theme-light.css";
+    localStorage.setItem('theme', 'light');
 }
 
 btn.addEventListener('click', () => {
